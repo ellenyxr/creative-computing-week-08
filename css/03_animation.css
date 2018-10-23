@@ -28,25 +28,72 @@ a {
 }
 
 .content {
-  height: 100%;
+  height: 300%;
   min-height: 100vh;
   width: 100%;
   padding: 20px;
   background: #efefef;
 }
 
-.shape {
-  margin: 85px;
-  width: 200px;  
-  height: 200px;
-  background: royalblue;
+
+
+ @keyframes bounce {
+
+        0%   { transform: scale(1,1)      translateY(0); }
+        10%  { transform: scale(1.1,.8)   translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-100px); }
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        57%  { transform: scale(1,1)      translateY(-80px); }
+        64%  { transform: scale(1,1)      translateY(-40); }
+        100% { transform: scale(1,1)      translateY(0); }
+
+  }
 }
+
+
+@keyframes squiggle{
+
+  0%{
+    
+    transform:scale(1.0) rotateZ(0deg)
+  }
+
+  25%{
+    background:red
+    transform:scale(1.7) rotateZ(0deg)
+  }
+
+  90%{
+    transform:scale(1.7) rotateZ(45deg)
+  }
+
+  100%{
+    background:blue;
+    transform:scale(1.5) rotateZ(45deg);
+  }
+
+}
+
 
 .variation-1 {
+
+  height:500px;
+  width:500px;
+  border-top-left-radius:50px;
+  border-top-right-radius:50px;
+  border-bottom-left-radius:50px;
+  border-bottom-right-radius:50px;
+  background: black;
+  border-radius: 50%;
+  animation-name:bounce;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  height: 200px;
+  transform-origin: bottom;
+  width: 200px;
+  animation-timing-function: ease;
+
+
 }
 
-.variation-2 {
-}
-
-.variation-3 {
-}

@@ -40,16 +40,29 @@ a {
   width: 200px;  
   height: 200px;
   background: navy;
+
 }
 
 .rectangle {
-
+  width:300px;
+  height:100px; 
 }
 
 .circle {
+  height:50px;
+  width:50px;
+  border-top-left-radius:50px;
+  border-top-right-radius:50px;
+  border-bottom-left-radius:50px;
+  border-bottom-right-radius:50px;
+
 
 }
 
 .triangle {
+  border-top:50px solid red;
+  border-bottom:50px solid red;
+  border-left::50px solid red;
+  border-right:50px solid red;
 
-}
+  }
